@@ -1,0 +1,57 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif !important;
+  /* 색상 설정 */
+  --black-color: #1c1c1c;
+  --white-color: #fdfdfd;
+  --gray-color: #858585;
+  --light-gray-color: #DDDDDD;
+  --point-color: #4AC49E;
+  --sub-color: #E7FAF7;
+  --dark-color: #0D1545;
+  --gradation-color: linear-gradient(
+    0deg,
+    rgba(74, 196, 158, 0.32) 0%,
+    rgba(131, 236, 220, 0.15) 100%
+  );
+  --light-gradation-color: linear-gradient(
+    0deg,
+    #edf9f6 0%,
+    #f9fefd 100%
+  );
+  /* 투명도 없는 그라데이션(원본보다 살짝 노란색) 
+  --gradation-color: linear-gradient(
+    180deg,
+    #ecfbf6,
+    #c5ebdc
+  ); */
+  --lower-color: #434FD9;
+  --light-lower-color: #DDF1FF;
+  --upper-color: #FF6464;
+  --light-upper-color: #FFDEDE;
+  --star-color: #EFDA4C;
+  --safe-color: #50867C;
+  --middle-color: #FAC152;
+  --danger-color: #392727;
+  --background-color: #F9F9F9;
+}
+
+#root {
+  width: 100%;
+  /* height: 100vh; */
+  position: absolute;
+  background-color: #F9F9F9;
+  color: var(--black-color);
+}
+
+::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}

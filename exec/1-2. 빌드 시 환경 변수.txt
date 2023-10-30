@@ -1,0 +1,77 @@
+application.yml
+```
+spring:
+  profiles:
+    active: local
+  application:
+    name: user-service
+h2:
+  console:
+    enabled: true
+    settings:
+      web-allow-others: true  # 추가
+```
+
+--------------------------------------------
+
+application-local. yml
+```
+server:
+  port: 8081
+spring:
+  batch:
+    job:
+      enabled: true
+    jdbc:
+      initialize-schema: always
+  cloud:
+    config:
+      enabled: false
+  data:
+    redis:
+      host: '127.0.0.1'
+      port: 6379
+      password: 17171771
+  datasource:
+#    url: jdbc:h2:tcp://localhost/~/test
+    url: jdbc:h2:mem:test # 인메모리 방식
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+#    open-in-view: false // hibernate 뷰 렌더링 시 쿼리 문 보지 않기
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+logging.level:
+  org.hibernate.SQL: debug
+social:
+  client:
+    google:
+      rest-api-key:
+      secret-key:
+      redirect-uri:
+      grant_type:
+    kakao:
+      rest-api-key: a21cb4cfd9c1a81b77614f1af356f2d1
+      secret-key:
+#      redirect-uri: http://localhost:8081/api/user
+      redirect-uri: http://localhost:3000/auth
+      grant_type: authorization_code
+    naver:
+      rest-api-key:
+      secret-key:
+      redirect-uri:
+      grant_type:
+jwt:
+  secret: secret
+openapi:
+  service:
+    title: SSAFI
+    version: 1.0.0
+springdoc:
+  show-login-endpoint: true
+```

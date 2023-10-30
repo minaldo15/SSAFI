@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid var(--light-gray-color);
+  border-top: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+
+.tabs {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  background: var(--background-color);
+  border: 1px solid var(--light-gray-color);
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  transition: background 0.2s ease; /* 추가된 부분 */
+}
+
+.tabs.active-tabs {
+  background: var(--white-color);
+  border-radius: 0px;
+  border: none;
+  border-top: 4px solid var(--point-color);
+  display: block;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.content-tabs {
+  background: var(--white-color);
+  /* padding: 2px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-grow: 1;
+  overflow: hidden; */
+  flex-direction: column;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  height: 100%;
+}
+
+.content.active-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+/* 개별 버튼에 대한 스타일 */
+.button-container button {
+  display: flex;
+  padding: 2px;
+  text-align: center;
+}
+
+.star {
+  stroke-width: 2px;
+  stroke: var(--Middle, #efda4c);
+}
+
+.star.filled {
+  fill: var(--Middle, #efda4c);
+}

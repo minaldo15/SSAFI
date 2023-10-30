@@ -1,0 +1,64 @@
+.account-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--light-gray-color);
+  border-top: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.account-container .bloc-tabs {
+  display: flex;
+}
+
+.account-container .tabs {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  background: var(--background-color);
+  border: 1px solid var(--light-gray-color);
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  transition: background 0.2s ease; /* 추가된 부분 */
+}
+
+.account-container .tabs.active-tabs {
+  background: var(--white-color);
+  border-radius: 0px;
+  border: none;
+  border-top: 4px solid var(--point-color);
+  display: block;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.account-container .content-tabs {
+  background: var(--white-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-container .content {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.account-container .content.active-content {
+  display: flex;
+  align-items: center;
+  height: 197.2px;
+}
+
+.account-container .content p {
+  width: 100%;
+  height: 100%;
+}
+
+.account-container button {
+  border: none;
+}
