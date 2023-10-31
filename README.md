@@ -64,14 +64,14 @@
 
 ## 팀 구성
 
-SSAFY 9기 최희빈(팀장) - Infra (CI/CD), 기획, 발표
+SSAFY 9기 최희빈(팀장) - Infra (CI/CD), 발표
 
-SSAFY 9기 김동욱(팀원) - BackEnd (Spring), 기획
+SSAFY 9기 김동욱(팀원) - BackEnd (Spring), Rest API
 
-SSAFY 9기 민경현(팀원) - FrontEnd, 기획, 발표 보조
+SSAFY 9기 민경현(팀원) - FrontEnd, 한투 open API(빠른주문, 내계좌)
 
-SSAFY 9기 민동후(팀원) - FrontEnd, 기획 (목업)
+SSAFY 9기 민동후(팀원) - FrontEnd, 메인페이지, 금융 MBTI, 뉴스
 
-SSAFY 9기 윤지현(팀원) - FrontEnd, 기획 (목업)
+SSAFY 9기 윤지현(팀원) - FrontEnd, AI 투자, 디자인(CSS)
 
-SSAFY 9기 이상우(팀원) - BackEnd (AI), 기획
+SSAFY 9기 이상우(팀원) - BackEnd (AI), AI 모델
